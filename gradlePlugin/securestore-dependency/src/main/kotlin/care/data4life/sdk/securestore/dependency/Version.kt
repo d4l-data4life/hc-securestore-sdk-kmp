@@ -45,7 +45,7 @@ object Version {
             /**
              * [Coroutines](https://github.com/Kotlin/kotlinx.coroutines)
              */
-            const val coroutines = "1.3.9-native-mt"
+            const val coroutines = "1.4.3-native-mt"
 
             /**
              * [Serialization](https://github.com/Kotlin/kotlinx.serialization)
@@ -62,13 +62,13 @@ object Version {
             /**
              * [hc-util-kmp](https://github.com/d4l-data4life/hc-util-kmp)
              */
-            const val utilSdk = "1.7.0"
+            const val utilSdk = "1.8.0"
         }
 
         /**
          * [Koin](https://github.com/InsertKoinIO/koin)
          */
-        const val koin = "3.0.1-beta-2"
+        const val koin = "3.0.1"
     }
 
     object MultiplatformTest {
