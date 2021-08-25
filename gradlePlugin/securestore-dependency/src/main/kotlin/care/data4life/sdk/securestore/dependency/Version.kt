@@ -33,7 +33,7 @@ object Version {
 
     object GradlePlugin {
         const val kotlin = Version.kotlin
-        const val android = "4.2.1"
+        const val android = "4.2.2"
     }
 
     object Multiplatform {
@@ -62,7 +62,7 @@ object Version {
             /**
              * [hc-util-kmp](https://github.com/d4l-data4life/hc-util-kmp)
              */
-            const val utilSdk = "1.8.0"
+            const val utilSdk = "1.10.0"
         }
 
         /**
