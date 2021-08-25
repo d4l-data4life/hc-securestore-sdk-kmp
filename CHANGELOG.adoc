@@ -40,6 +40,8 @@ See link:{link-repository}/compare/v1.13.2...main[changeset]
 
 === Bumped
 
+* Gradle 6.9 -> 6.9.1
+
 === Deprecated
 
 === Migration
