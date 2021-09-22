@@ -18,7 +18,7 @@ import care.data4life.gradle.securestore.dependency.d4l
 
 plugins {
     `kotlin-dsl`
-    id("care.data4life.sdk.securestore.dependency")
+    id("care.data4life.gradle.securestore.dependency")
 }
 
 repositories {

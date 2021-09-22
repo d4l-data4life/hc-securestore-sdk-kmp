@@ -24,10 +24,10 @@ plugins {
     id("com.android.library")
 
     // Publish
-    id("care.data4life.sdk.securestore.publishing-config")
+    id("care.data4life.gradle.securestore.script.publishing-config")
 }
 
-group = care.data4life.gradle.securestore.config.LibraryConfig.group
+group = LibraryConfig.group
 
 kotlin {
     android {
@@ -39,60 +39,60 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(care.data4life.gradle.securestore.dependency.Dependency.multiplatform.kotlin.stdLib.common)
-                implementation(care.data4life.gradle.securestore.dependency.Dependency.multiplatform.d4l.util.common)
+                implementation(Dependency.multiplatform.kotlin.stdLib.common)
+                implementation(Dependency.multiplatform.d4l.util.common)
             }
         }
         val commonTest by getting {
             dependencies {
-                implementation(care.data4life.gradle.securestore.dependency.Dependency.multiplatformTest.kotlin.common)
-                implementation(care.data4life.gradle.securestore.dependency.Dependency.multiplatformTest.kotlin.commonAnnotations)
+                implementation(Dependency.multiplatformTest.kotlin.common)
+                implementation(Dependency.multiplatformTest.kotlin.commonAnnotations)
 
-                implementation(care.data4life.gradle.securestore.dependency.Dependency.multiplatformTest.mockK.common)
+                implementation(Dependency.multiplatformTest.mockK.common)
             }
         }
 
         val androidMain by getting {
             dependencies {
-                implementation(care.data4life.gradle.securestore.dependency.Dependency.Android.AndroidX.ktx)
+                implementation(Dependency.android.androidX.ktx)
 
-                implementation(care.data4life.gradle.securestore.dependency.Dependency.android.tink)
+                implementation(Dependency.android.tink)
             }
         }
         val androidTest by getting {
             dependencies {
-                implementation(care.data4life.gradle.securestore.dependency.Dependency.multiplatformTest.kotlin.jvm)
-                implementation(care.data4life.gradle.securestore.dependency.Dependency.multiplatformTest.kotlin.jvmJunit)
+                implementation(Dependency.multiplatformTest.kotlin.jvm)
+                implementation(Dependency.multiplatformTest.kotlin.jvmJunit)
 
-                implementation(care.data4life.gradle.securestore.dependency.Dependency.multiplatformTest.mockK.junit)
+                implementation(Dependency.multiplatformTest.mockK.junit)
 
-                implementation(care.data4life.gradle.securestore.dependency.Dependency.androidTest.robolectric)
+                implementation(Dependency.androidTest.robolectric)
             }
         }
         val androidAndroidTest by getting {
             dependsOn(androidMain)
             dependencies {
-                implementation(care.data4life.gradle.securestore.dependency.Dependency.multiplatformTest.kotlin.jvm)
-                implementation(care.data4life.gradle.securestore.dependency.Dependency.multiplatformTest.kotlin.jvmJunit)
+                implementation(Dependency.multiplatformTest.kotlin.jvm)
+                implementation(Dependency.multiplatformTest.kotlin.jvmJunit)
 
-                implementation(care.data4life.gradle.securestore.dependency.Dependency.multiplatformTest.mockK.junit)
+                implementation(Dependency.multiplatformTest.mockK.junit)
 
-                implementation(care.data4life.gradle.securestore.dependency.Dependency.androidTest.runner)
-                implementation(care.data4life.gradle.securestore.dependency.Dependency.androidTest.espressoCore)
+                implementation(Dependency.androidTest.runner)
+                implementation(Dependency.androidTest.espressoCore)
             }
         }
 
         val jvmMain by getting {
             dependencies {
-                implementation(care.data4life.gradle.securestore.dependency.Dependency.multiplatform.kotlin.stdLib.jdk8)
+                implementation(Dependency.multiplatform.kotlin.stdLib.jdk8)
             }
         }
         val jvmTest by getting {
             dependencies {
-                implementation(care.data4life.gradle.securestore.dependency.Dependency.multiplatformTest.kotlin.jvm)
-                implementation(care.data4life.gradle.securestore.dependency.Dependency.multiplatformTest.kotlin.jvmJunit)
+                implementation(Dependency.multiplatformTest.kotlin.jvm)
+                implementation(Dependency.multiplatformTest.kotlin.jvmJunit)
 
-                implementation(care.data4life.gradle.securestore.dependency.Dependency.multiplatformTest.mockK.junit)
+                implementation(Dependency.multiplatformTest.mockK.junit)
             }
         }
     }
@@ -103,11 +103,11 @@ kotlin {
 }
 
 android {
-    compileSdkVersion(care.data4life.gradle.securestore.config.LibraryConfig.android.compileSdkVersion)
+    compileSdkVersion(LibraryConfig.android.compileSdkVersion)
 
     defaultConfig {
-        minSdkVersion(care.data4life.gradle.securestore.config.LibraryConfig.android.minSdkVersion)
-        targetSdkVersion(care.data4life.gradle.securestore.config.LibraryConfig.android.targetSdkVersion)
+        minSdkVersion(LibraryConfig.android.minSdkVersion)
+        targetSdkVersion(LibraryConfig.android.targetSdkVersion)
 
         versionCode = 1
         versionName = "${project.version}"
@@ -120,7 +120,7 @@ android {
         )
     }
 
-    resourcePrefix(care.data4life.gradle.securestore.config.LibraryConfig.android.resourcePrefix)
+    resourcePrefix(LibraryConfig.android.resourcePrefix)
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
