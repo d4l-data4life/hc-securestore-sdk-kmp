@@ -15,7 +15,7 @@
  */
 
 import care.data4life.sdk.securestore.dependency.Dependency
-import care.data4life.sdk.securestore.LibraryConfig
+import care.data4life.gradle.securestore.config.LibraryConfig
 
 plugins {
     id("org.jetbrains.kotlin.multiplatform")
@@ -27,7 +27,7 @@ plugins {
     id("care.data4life.sdk.securestore.publishing-config")
 }
 
-group = LibraryConfig.group
+group = care.data4life.gradle.securestore.config.LibraryConfig.group
 
 kotlin {
     android {
@@ -103,11 +103,11 @@ kotlin {
 }
 
 android {
-    compileSdkVersion(LibraryConfig.android.compileSdkVersion)
+    compileSdkVersion(care.data4life.gradle.securestore.config.LibraryConfig.android.compileSdkVersion)
 
     defaultConfig {
-        minSdkVersion(LibraryConfig.android.minSdkVersion)
-        targetSdkVersion(LibraryConfig.android.targetSdkVersion)
+        minSdkVersion(care.data4life.gradle.securestore.config.LibraryConfig.android.minSdkVersion)
+        targetSdkVersion(care.data4life.gradle.securestore.config.LibraryConfig.android.targetSdkVersion)
 
         versionCode = 1
         versionName = "${project.version}"
@@ -120,7 +120,7 @@ android {
         )
     }
 
-    resourcePrefix(LibraryConfig.android.resourcePrefix)
+    resourcePrefix(care.data4life.gradle.securestore.config.LibraryConfig.android.resourcePrefix)
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8

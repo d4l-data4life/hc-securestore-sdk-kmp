@@ -14,7 +14,7 @@
  * contact D4L by email to help@data4life.care.
  */
 
-package care.data4life.sdk.securestore
+package care.data4life.gradle.securestore.config
 
 object AppConfig {
 
@@ -23,9 +23,12 @@ object AppConfig {
     const val group = LibraryConfig.group
 
     object AndroidConfig {
-        const val minSdkVersion = LibraryConfig.AndroidLibraryConfig.minSdkVersion
-        const val compileSdkVersion = LibraryConfig.AndroidLibraryConfig.compileSdkVersion
-        const val targetSdkVersion = LibraryConfig.AndroidLibraryConfig.targetSdkVersion
+        const val minSdkVersion =
+            LibraryConfig.AndroidLibraryConfig.minSdkVersion
+        const val compileSdkVersion =
+            LibraryConfig.AndroidLibraryConfig.compileSdkVersion
+        const val targetSdkVersion =
+            LibraryConfig.AndroidLibraryConfig.targetSdkVersion
 
         const val versionCode = 1
         const val versionName = "0.1.0"

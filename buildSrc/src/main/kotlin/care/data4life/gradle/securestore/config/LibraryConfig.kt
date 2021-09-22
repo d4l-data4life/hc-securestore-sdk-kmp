@@ -14,7 +14,7 @@
  * contact D4L by email to help@data4life.care.
  */
 
-package care.data4life.sdk.securestore
+package care.data4life.gradle.securestore.config
 
 object LibraryConfig {
 
@@ -35,9 +35,9 @@ object LibraryConfig {
 
         // URL
         const val host = "github.com"
-        const val path = "$githubOwner/$githubRepository"
+        const val path = "${care.data4life.gradle.securestore.config.LibraryConfig.githubOwner}/${care.data4life.gradle.securestore.config.LibraryConfig.githubRepository}"
 
-        const val url = "https://$host/$path"
+        const val url = "https://${care.data4life.gradle.securestore.config.LibraryConfig.PublishConfig.host}/${care.data4life.gradle.securestore.config.LibraryConfig.PublishConfig.path}"
 
         // DEVELOPER
         const val developerId = "d4l-data4life"
@@ -46,12 +46,12 @@ object LibraryConfig {
 
         // LICENSE
         const val licenseName = "Private"
-        const val licenseUrl = "$url/blob/main/LICENSE"
+        const val licenseUrl = "${care.data4life.gradle.securestore.config.LibraryConfig.PublishConfig.url}/blob/main/LICENSE"
         const val licenseDistribution = "repo"
 
         // SCM
-        const val scmUrl = "git://$host/$path.git"
-        const val scmConnection = "scm:$scmUrl"
+        const val scmUrl = "git://${care.data4life.gradle.securestore.config.LibraryConfig.PublishConfig.host}/${care.data4life.gradle.securestore.config.LibraryConfig.PublishConfig.path}.git"
+        const val scmConnection = "scm:${care.data4life.gradle.securestore.config.LibraryConfig.PublishConfig.scmUrl}"
         const val scmDeveloperConnection = scmConnection
     }
 
