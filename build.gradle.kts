@@ -14,8 +14,8 @@
  * contact D4L by email to help@data4life.care.
  */
 
-import care.data4life.sdk.securestore.dependency.d4l
-import care.data4life.sdk.securestore.dependency.gitHub
+import care.data4life.gradle.securestore.dependency.d4l
+import care.data4life.gradle.securestore.dependency.gitHub
 
 plugins {
     id("care.data4life.sdk.securestore.dependency")
