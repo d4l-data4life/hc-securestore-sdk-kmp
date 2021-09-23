@@ -1,5 +1,5 @@
 = Contributing
-:link-repository: https://github.com/d4l-data4life/hc-result-sdk-kmp
+:link-repository: https://github.com/d4l-data4life/hc-securestore-sdk-kmp
 :doctype: article
 :toc: macro
 :toclevels: 2
