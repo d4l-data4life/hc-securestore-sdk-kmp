@@ -14,8 +14,8 @@
  * contact D4L by email to help@data4life.care.
  */
 
-import care.data4life.sdk.securestore.dependency.Dependency
-import care.data4life.sdk.securestore.LibraryConfig
+import care.data4life.gradle.securestore.dependency.Dependency
+import care.data4life.gradle.securestore.config.LibraryConfig
 
 plugins {
     id("org.jetbrains.kotlin.multiplatform")
@@ -24,7 +24,7 @@ plugins {
     id("com.android.library")
 
     // Publish
-    id("care.data4life.sdk.securestore.publishing-config")
+    id("care.data4life.gradle.securestore.script.publishing-config")
 }
 
 group = LibraryConfig.group
@@ -54,7 +54,7 @@ kotlin {
 
         val androidMain by getting {
             dependencies {
-                implementation(Dependency.Android.AndroidX.ktx)
+                implementation(Dependency.android.androidX.ktx)
 
                 implementation(Dependency.android.tink)
             }

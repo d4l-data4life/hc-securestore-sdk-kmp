@@ -14,22 +14,14 @@
  * contact D4L by email to help@data4life.care.
  */
 
-package care.data4life.sdk.securestore
+package care.data4life.gradle.securestore.dependency
 
-object AppConfig {
+import org.gradle.api.Plugin
+import org.gradle.api.Project
 
-    val android = AndroidConfig
+class DependencyPlugin : Plugin<Project> {
 
-    const val group = LibraryConfig.group
-
-    object AndroidConfig {
-        const val minSdkVersion = LibraryConfig.AndroidLibraryConfig.minSdkVersion
-        const val compileSdkVersion = LibraryConfig.AndroidLibraryConfig.compileSdkVersion
-        const val targetSdkVersion = LibraryConfig.AndroidLibraryConfig.targetSdkVersion
-
-        const val versionCode = 1
-        const val versionName = "0.1.0"
-
-        const val applicationId = "$group.sample"
+    override fun apply(target: Project) {
+        // nothing to do
     }
 }

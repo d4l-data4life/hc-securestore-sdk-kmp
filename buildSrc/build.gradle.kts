@@ -1,4 +1,4 @@
-import care.data4life.sdk.securestore.dependency.d4l
+import care.data4life.gradle.securestore.dependency.d4l
 
 /*
  * Copyright (c) 2021 D4L data4life gGmbH / All rights reserved.
@@ -18,7 +18,7 @@ import care.data4life.sdk.securestore.dependency.d4l
 
 plugins {
     `kotlin-dsl`
-    id("care.data4life.sdk.securestore.dependency")
+    id("care.data4life.gradle.securestore.dependency")
 }
 
 repositories {
@@ -29,8 +29,8 @@ repositories {
 }
 
 dependencies {
-    implementation(care.data4life.sdk.securestore.dependency.GradlePlugin.kotlin)
-    implementation(care.data4life.sdk.securestore.dependency.GradlePlugin.android)
+    implementation(care.data4life.gradle.securestore.dependency.GradlePlugin.kotlin)
+    implementation(care.data4life.gradle.securestore.dependency.GradlePlugin.android)
 
     // dependency-updates.gradle.kts
     implementation("com.github.ben-manes:gradle-versions-plugin:0.38.0")

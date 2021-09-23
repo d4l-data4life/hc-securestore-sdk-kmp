@@ -14,17 +14,17 @@
  * contact D4L by email to help@data4life.care.
  */
 
-import care.data4life.sdk.securestore.dependency.d4l
-import care.data4life.sdk.securestore.dependency.gitHub
+import care.data4life.gradle.securestore.dependency.d4l
+import care.data4life.gradle.securestore.dependency.gitHub
 
 plugins {
-    id("care.data4life.sdk.securestore.dependency")
+    id("care.data4life.gradle.securestore.dependency")
 
-    id("care.data4life.sdk.securestore.dependency-updates")
-    id("care.data4life.sdk.securestore.download-scripts")
-    id("care.data4life.sdk.securestore.publishing")
-    id("care.data4life.sdk.securestore.quality-spotless")
-    id("care.data4life.sdk.securestore.versioning")
+    id("care.data4life.gradle.securestore.script.dependency-updates")
+    id("care.data4life.gradle.securestore.script.download-scripts")
+    id("care.data4life.gradle.securestore.script.publishing")
+    id("care.data4life.gradle.securestore.script.quality-spotless")
+    id("care.data4life.gradle.securestore.script.versioning")
 }
 
 allprojects {

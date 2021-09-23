@@ -14,7 +14,7 @@
  * contact D4L by email to help@data4life.care.
  */
 
-package care.data4life.sdk.securestore.dependency
+package care.data4life.gradle.securestore.dependency
 
 import org.gradle.api.Project
 import org.gradle.api.artifacts.dsl.RepositoryHandler
