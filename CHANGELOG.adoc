@@ -27,7 +27,7 @@ Template could be found here: link:https://github.com/d4l-data4life/hc-readme-te
 toc::[]
 
 
-== link:{link-repository}/releases/tag/v1.13.2[1.13.2]
+== link:{link-repository}/releases/latest[Unreleased]
 
 See link:{link-repository}/compare/v1.14.0...main[changeset]
 
