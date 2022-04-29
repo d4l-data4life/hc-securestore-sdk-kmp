@@ -83,7 +83,7 @@ object Version {
         /**
          * [BouncyCastle](http://www.bouncycastle.org/java.html)
          */
-        const val bouncyCastle = "1.64"
+        const val bouncyCastle = "1.71"
     }
 
     object JvmTest {

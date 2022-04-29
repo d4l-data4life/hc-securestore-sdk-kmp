@@ -111,7 +111,7 @@ object Dependency {
 
     object Jvm {
         // Crypto
-        const val bouncyCastleJdk15 = "org.bouncycastle:bcprov-jdk15on:${Version.jvm.bouncyCastle}"
+        const val bouncyCastleJdk15 = "org.bouncycastle:bcprov-jdk18on:${Version.jvm.bouncyCastle}"
     }
 
     object JvmTest {
