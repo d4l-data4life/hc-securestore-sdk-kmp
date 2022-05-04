@@ -15,6 +15,7 @@
  */
 
 import care.data4life.gradle.securestore.dependency.d4l
+import care.data4life.gradle.securestore.dependency.ensureKotlinVersion
 import care.data4life.gradle.securestore.dependency.gitHub
 
 plugins {
@@ -36,9 +37,11 @@ allprojects {
 
         d4l()
     }
+
+    ensureKotlinVersion()
 }
 
 tasks.named<Wrapper>("wrapper") {
-    gradleVersion = "7.2"
+    gradleVersion = "7.4.2"
     distributionType = Wrapper.DistributionType.ALL
 }
