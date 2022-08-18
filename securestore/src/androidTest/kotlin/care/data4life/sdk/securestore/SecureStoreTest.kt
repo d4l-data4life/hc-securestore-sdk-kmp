@@ -19,10 +19,10 @@ package care.data4life.sdk.securestore
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.verifyAll
-import org.junit.Before
-import org.junit.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
+import org.junit.Before
+import org.junit.Test
 
 class SecureStoreTest {
 
