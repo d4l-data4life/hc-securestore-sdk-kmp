@@ -18,13 +18,13 @@ package care.data4life.sdk.securestore
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4
+import kotlin.test.assertFalse
+import kotlin.test.assertNull
+import kotlin.test.assertTrue
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import kotlin.test.assertFalse
-import kotlin.test.assertNull
-import kotlin.test.assertTrue
 
 @RunWith(AndroidJUnit4::class)
 class SecureStoreInstrumentedTest {

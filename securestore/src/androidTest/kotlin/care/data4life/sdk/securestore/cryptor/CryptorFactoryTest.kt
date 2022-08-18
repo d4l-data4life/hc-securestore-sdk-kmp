@@ -24,9 +24,9 @@ import io.mockk.every
 import io.mockk.mockk
 import io.mockk.mockkObject
 import io.mockk.mockkStatic
+import java.security.KeyStore
 import org.junit.After
 import org.junit.Test
-import java.security.KeyStore
 
 class CryptorFactoryTest {
 
