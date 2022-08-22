@@ -25,11 +25,9 @@ Template could be found here: link:https://github.com/d4l-data4life/hc-readme-te
 ==== Versions
 
 toc::[]
-
-
 == link:{link-repository}/releases/latest[Unreleased]
 
-See link:{link-repository}/compare/v1.15.0\...main[changeset]
+See link:{link-repository}/compare/v1.16.0\...main[changeset]
 
 === Added
 
@@ -40,6 +38,13 @@ See link:{link-repository}/compare/v1.15.0\...main[changeset]
 === Removed
 
 === Fixed
+
+=== Bumped
+
+
+== link:{link-repository}/releases/v1.16.0[1.16.0]
+
+See link:{link-repository}/compare/v1.15.0\...v1.16.0[changeset]
 
 === Bumped
 
@@ -57,7 +62,9 @@ See link:{link-repository}/compare/v1.15.0\...main[changeset]
 * Android Material 1.5.0 -> 1.6.1
 * Android Target SDK 31 -> 33
 
-See link:{link-repository}/compare/v1.14.0\...1.15.0[1.15.0]
+== link:{link-repository}/releases/tag/v1.15.0[1.15.0]
+
+See link:{link-repository}/compare/v1.14.0\...v1.15.0[changeset]
 
 === Bumped
 
